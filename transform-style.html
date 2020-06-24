@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Transform-style</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css">
+		.base
+		{
+			height:200px;
+			width: 200px;
+			background-color: gray;
+			margin: 100px;
+			
+			transform: rotateY(30deg);
+			transform-style: preserve-3d;
+		}
+		.box
+		{
+			height: 200px;
+			width: 200px;
+			background-color: tomato;
+			transform:perspective(800px) rotateX(60deg);
+			transform-origin: top;
+
+		}
+		
+	</style>
+</head>
+<body>
+<div class="base">
+	<div class="box">
+		Zeellll
+	</div>
+</div>
+</body>
+</html>
